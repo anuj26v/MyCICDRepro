@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable">
+	<aura:attribute name="Street" type="string" default="Wattson Street"/>
+    <aura:attribute name="City" type="string" default="San Mateo"/>
+    <aura:attribute name="State" type="string" default="California"/>
+    <aura:attribute name="PostalCode" type="string" default="42342"/>
+    Address : {!v.Street} + {!v.City} + {!v.State} + {!v.PostalCode}
+</aura:component>

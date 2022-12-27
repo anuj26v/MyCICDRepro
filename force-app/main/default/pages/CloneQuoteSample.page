@@ -1,0 +1,14 @@
+<apex:page controller="QuoteClone">
+    <apex:sectionHeader title="Clone Quote"/>
+    <apex:form >
+        <apex:pageBlock title="Clone Quote">
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!Opp.SyncedQuoteId}"/>
+                <apex:inputField value="{!Opp.AccountId}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!saveData}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
